@@ -53,6 +53,18 @@ public class RegExp {
  		{
  			System.out.println("failure");
  		}
+ 		System.out.println();
+ 		//find method
+ 		
+ 		Pattern p= Pattern.compile("m.a");
+ 		Matcher m=p.matcher("mphyyfmpaa");
+ 		System.out.println(m.matches());//false
+ 		System.out.println(m.find());//true
+ 		System.out.println(m.start());//6
+ 		System.out.println(m.end());//9
+ 		
+ 		
+ 		
 	}
 
 }
